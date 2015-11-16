@@ -14,5 +14,5 @@ sbt -Dhadoop.version=2.6.0-cdh5.4.3 assembly
 ~~~
 ## submit
 ~~~bash
-spark-submit --class example.KafkaWordCount --master yarn-cluster --num-executors 2 --driver-memory 2g --executor-memory 1g --executor-cores 1 ${EXAMPLE_PATH}/example.jar zk-quorum-host:3181 group1 topic1 1 /tmp/output
+spark-submit --class example.Example --master yarn-cluster --num-executors 2 --driver-memory 2g --executor-memory 1g --executor-cores 1 ${EXAMPLE_PATH}/example.jar zk-quorum-host:3181 group1 topic1 1 /tmp/output
 ~~~
